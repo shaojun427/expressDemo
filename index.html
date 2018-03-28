@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="//shaojun427.github.io/singlePage/dist/index.css">
+  <script>
+    const __LOCALE__ = window.localStorage.getItem('__LOCALE__') || "zh-cn";
+    if(__LOCALE__ !== "zh-cn") {
+      let fileref = document.createElement('link');
+      fileref.setAttribute("rel", "stylesheet");
+      fileref.setAttribute("type", "text/css");
+      fileref.setAttribute("href", "./" + __LOCALE__+ ".css");
+      document.getElementsByTagName("head")[0].appendChild(fileref);
+    };
+  </script>
+</head>
+<body>
+<div id="App"></div>
+<script src="//shaojun427.github.io/singlePage/dist/vendor.js"></script>
+<script src="//shaojun427.github.io/singlePage/dist/uxcoreChild.js"></script>
+<script src="//shaojun427.github.io/singlePage/dist/index.js"></script>
+</body>
+</html>
